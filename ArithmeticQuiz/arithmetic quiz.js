@@ -1,7 +1,7 @@
 function start_quiz() {
     window.open('http://dl.dropbox.com/u/88468608/Untitled%20Folder/arithmetic%20quiz_questions.html', 'TEST WINDOW', 'width=1000,height=400,location=0;scrollbars=0,menubar=0,toolbar=0,resizeable=0,status=0', 1).focus();
 
-}//http://dl.dropbox.com/u/88468608/Untitled%20Folder/
+}
 var timer_forques, QuesAnsRecord = {};
 var input_tb = document.getElementById("answer");
 QuesAnsRecord["score"] = {"correct" : 0, "incorrect" : 0, "unmarked" : 0};
