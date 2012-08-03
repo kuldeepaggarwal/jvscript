@@ -107,7 +107,7 @@ function Result(NoOfQues) {
         forecolor = "black"
     }
     tablerow.style.backgroundColor = bgcolor;
-tablerow.style.color = forecolor;
+    tablerow.style.color = forecolor;
     console.log(tablerow.style.textColor);
     console.log(tablerow.style.color);
     }
