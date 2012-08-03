@@ -45,8 +45,8 @@ function next_question() {
 }
 
 function question_printing(ques_no) {
-    document.getElementById("1").innerText = QuesAnsRecord[ques_no]["question"];
-    document.getElementById("ques_num_lbl").innerText = ques_no + ":";
+    document.getElementById("1").textContent = QuesAnsRecord[ques_no]["question"];
+    document.getElementById("ques_num_lbl").textContent = ques_no + ":";
 }
 function CreateQuestions(NoOfQues) {
   for(var i = 1; i <= NoOfQues; i++) {
@@ -100,11 +100,16 @@ function Result(NoOfQues) {
     ques.innerText = QuesAnsRecord[i]["question"];
     act_ans.innerText = QuesAnsRecord[i]["expected_ans"];
     user_ans.innerText = QuesAnsRecord[i]["user_ans"];
-    color = QuesAnsRecord[i]["expected_ans"] == QuesAnsRecord[i]["user_ans"] ? "green" : "red"
+    bgcolor = QuesAnsRecord[i]["expected_ans"] == QuesAnsRecord[i]["user_ans"] ? "#003800" : "red"
+    forecolor = "white"
     if(isNaN(QuesAnsRecord[i]["user_ans"])) {
-        color = "white"
+        bgcolor = "white"
+        forecolor = "black"
     }
-    tablerow.style.backgroundColor = color;
+    tablerow.style.backgroundColor = bgcolor;
+tablerow.style.color = forecolor;
+    console.log(tablerow.style.textColor);
+    console.log(tablerow.style.color);
     }
     document.getElementById("total_score").innerText = QuesAnsRecord["score"]["correct"];
 }
