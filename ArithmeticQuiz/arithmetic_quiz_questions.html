@@ -7,7 +7,7 @@
 <link type="text/css" href="quiz_question.css" rel="stylesheet" />
 
 </head>
-<body onload="clock()" id="bodypart">
+<body onload="startTest()" id="bodypart">
 <form >
 <div id = "result_div">
 	<label > Total Score : </label>    <label id = "total_score" > </label>
@@ -25,7 +25,7 @@
 	<label id ="label1" style="font-weight:bold; size:20px;"> </label>
 	<div id="opt" >
 		<label id="ques_lbl" class= "question_display">Question </label>
-                <label id="ques_num_lbl" class= "question_display">fkldsjfkds</label>
+                <label id="ques_num_lbl" class= "question_display"></label>
 		<label id="1" class= "question_display"></label>
 		<br/>
 		<input id="answer" type="text" name = "hello" />
@@ -33,7 +33,7 @@
 	<div style = "position:fixed;" class = "footer">
 	<label>Your Score is</label>
 	<input type = "text" id = "score_tb" disabled = "disabled" value ="0">
-	<input type="button" onclick="next_question()" id="next" value="NEXT&raquo;&raquo;"/>
+	<input type="button" onclick="resetTimer()" id="next" value="NEXT&raquo;&raquo;"/>
 	</div>
    </div>
    
